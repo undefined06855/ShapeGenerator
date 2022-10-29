@@ -72,7 +72,7 @@
                 You might want to use <kbd>ctrl</kbd>+<kbd>+</kbd> or <kbd>ctrl</kbd>+<kbd>-</kbd> to zoom the website in or out.
             </p>
             <div>
-                <label for="input">Word: </label><input type="text" onchange="dp()" id="input"/>
+                <label for="input">Word: </label><input type="text" oninput="dp()" id="input"/>
             </div>
 
             <div class="next">
@@ -81,9 +81,9 @@
             </div>
             
             <div>
-                <input type="checkbox" id="list" onchange="dp()" checked/><label for="list">Display letters</label>
+                <input type="checkbox" id="list" oninput="dp()" checked/><label for="list">Display letters</label>
                 <hr/>
-                <label for="scale" id="scaleLabel">Scale (10): </label><input type="range" max="20" min="1" step="1" value="10" id="scale" onchange="SCALE=this.value; document.getElementById('scaleLabel').innerText = `Scale (${this.value}): `;dp()"/>
+                <label for="scale" id="scaleLabel">Scale (10): </label><input type="range" max="20" min="1" step="1" value="10" id="scale" oninput="SCALE=this.value; document.getElementById('scaleLabel').innerText = `Scale (${this.value}): `;dp()"/>
             </div>
         </div>
 
